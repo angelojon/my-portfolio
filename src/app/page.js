@@ -1,113 +1,166 @@
-import Image from "next/image";
+import React from "react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 
-export default function Home() {
+export default function MyPortfolio() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="mt-32 mx-auto w-full max-w-2xl md:max-w-2xl lg:max-w-5xl  px-4 md:px-6 lg:px-8">
+      <div className="flex flex-col md:flex-row">
+        {/* Left column for information */}
+        <div className="mt-8 md:mt-12 lg:mt-24 md:ml-12 h-auto lg:h-[500px] w-full md:w-[450px] lg:w-[600px]">
+          <h1 className="text-5xl lg:text-6xl font-semibold opacity-90 mb-8">
+            Jon Angelo
+          </h1>
+          <div className="text-3xl lg:text-4xl opacity-80 mb-4">
+            <h3>Front-end Developer</h3>
+            <h3>UI/UX Designer</h3>
+          </div>
+          <p className="text-lg lg:text-xl opacity-70 mb-8">
+            An Information Technology graduate passionate about designing
+            high-quality, responsive user interfaces that deliver exceptional
+            user experiences.
+          </p>
+          <p className="text-xl lg:text-2xl font-medium opacity-70 mb-8">
+            Bringing visions to the web.
+          </p>
+          <div className="flex space-x-6 mt-4">
+            <a
+              href="mailto:your-email@gmail.com"
+              className="text-3xl text-gray-700 hover:text-gray-900"
+            >
+              <FaEnvelope />
+            </a>
+            <a
+              href="https://github.com/your-github"
+              className="text-3xl text-gray-700 hover:text-gray-900"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/your-linkedin"
+              className="text-3xl text-gray-700 hover:text-gray-900"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
+        </div>
+
+        {/* Right column for vector art */}
+        <div className="hidden lg:flex justify-center mt-12 md:mt-0 lg:mt-0 mx-auto md:mx-0 lg:mr-20 lg:px-[-30px] mb-12">
+          <img
+            src="/images/landing.png"
+            alt="Vector Art"
+            className="object-cover object-center h-[400px] md:h-[550px] lg:h-[600px] xl:h-[600px]  w-[400px] md:w-[550px] lg:w-[600px] xl:w-[600px] z-10"
+          />
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+      {/* Experience section */}
+      <section className=" h-screen content-center m-auto w-full px-4 md:px-6 lg:px-8">
+        <div className="flex items-center mb-8">
+          <hr className="border-t-1 border-black opacity-70 w-96 min-w-[150px] mr-4 md:mr-8 lg:mr-12 xl:mr-52 " />
+          <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 ml-4">
+            Experience
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+        </div>
+        <div className="space-y-8 max-w-sm justify-start lg:mr-80">
+          <div>
+            <h3 className="text-sm md:text-lg lg:text-lg font-semibold opacity-80">
+              Software Engineer Intern at Matchmo
+            </h3>
+            <p className="text-xs md:text-sm lg:text-md opacity-70">
+              Jan 2024 - April 2024
+            </p>
+            <p className="text-xs lg:text-sm opacity-70 mt-2">
+              Assisted in designing Matchmo's mobile app with Figma, enhanced
+              their CRM using JavaScript, and ensured quality through testing.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-sm md:text-lg lg:text-lg font-semibold opacity-80">
+              Web developer for Capstone Project
+            </h3>
+            <p className="text-xs md:text-sm lg:text-md opacity-70">2023</p>
+            <p className="text-xs lg:text-sm opacity-70 mt-2">
+              Developed an e-commerce web application for M.A.M. Bicycle Shop,
+              leading the front-end development and implementing a bike
+              customization feature. Utilized MS SQL for proper database
+              storage.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* Projects section */}
+      <section className=" h-screen content-center  mx-auto w-full  px-4 md:px-6 lg:px-8">
+        <div className="flex items-center mb-8">
+          <hr className="border-t-1 border-black opacity-70 w-96 min-w-[150px] mr-4 md:mr-8 lg:mr-24 xl:mr-52 " />
+          <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 ml-4">
+            Projects
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        </div>
+        <div className="grid grid-cols-1 gap-8 max-w-sm">
+          <a
+            href="/projects/project1"
+            className="block p-6 bg-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 className="text-lg lg:text-xl font-medium opacity-80">
+              Project 1 Title
+            </h3>
+          </a>
+          <a
+            href="/projects/project2"
+            className="block p-6 bg-gray-200  rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 className="text-lg lg:text-xl font-medium opacity-80">
+              Project 2 Title
+            </h3>
+          </a>
+          <a
+            href="/projects/project3"
+            className="block p-6 bg-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 className="text-lg lg:text-xl font-medium opacity-80">
+              Project 3 Title
+            </h3>
+          </a>
+          <a
+            href="/projects/project4"
+            className="block p-6 bg-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 className="text-lg lg:text-xl font-medium opacity-80">
+              Project 4 Title
+            </h3>
+          </a>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+      {/* Tools section */}
+      <section className="h-screen content-center mx-auto w-full px-4 md:px-6 lg:px-8">
+        <div className="flex items-center mb-8">
+          <hr className="border-t-1 border-black opacity-70 w-96 min-w-[150px] mr-4 md:mr-8 lg:mr-12 xl:mr-52" />
+          <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 ml-4">
+            Tools
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 max-w-sm  gap-y-8 sm:gap-x-6 sm:gap-y-10 md:gap-x-8 md:gap-y-12 lg:gap-x-12 lg:gap-y-16">
+          <div className="flex flex-col items-center">
+            <FaReact className="text-black hover:text-blue-500 text-6xl transition-colors duration-300" />
+            <p className="mt-2 text-sm font-medium opacity-80">React</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <SiTailwindcss className="text-black hover:text-blue-400 text-6xl transition-colors duration-300" />
+            <p className="mt-2 text-sm font-medium opacity-80">TailwindCSS</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaHtml5 className="text-black hover:text-orange-500 text-6xl transition-colors duration-300" />
+            <p className="mt-2 text-sm font-medium opacity-80">HTML</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaJsSquare className="text-black hover:text-yellow-500 text-6xl transition-colors duration-300" />
+            <p className="mt-2 text-sm font-medium opacity-80">JavaScript</p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
