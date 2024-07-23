@@ -48,7 +48,7 @@ export default function MyPortfolio() {
 
         {/* Right column for vector art */}
         <div className="hidden lg:flex justify-center mt-12 md:mt-0 lg:mt-0 mx-auto md:mx-0 lg:mr-20 lg:px-[-30px] mb-12">
-          <Image
+          <img
             src="/images/landing.png"
             alt="Vector Art"
             className="object-cover object-center h-[400px] md:h-[550px] lg:h-[600px] xl:h-[600px]  w-[400px] md:w-[550px] lg:w-[600px] xl:w-[600px] z-10"
@@ -72,8 +72,9 @@ export default function MyPortfolio() {
               Jan 2024 - April 2024
             </p>
             <p className="text-xs lg:text-sm opacity-70 mt-2">
-              Assisted in designing Matchmo's mobile app with Figma, enhanced
-              their CRM using JavaScript, and ensured quality through testing.
+              Assisted in designing Matchmo&apos;s mobile app with Figma,
+              enhanced their CRM using JavaScript, and ensured quality through
+              testing.
             </p>
           </div>
           <div>
