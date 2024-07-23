@@ -5,7 +5,7 @@ import { SiTailwindcss } from "react-icons/si";
 
 export default function MyPortfolio() {
   return (
-    <main className="mt-32 mx-auto w-full max-w-2xl md:max-w-2xl lg:max-w-5xl  px-4 md:px-6 lg:px-8">
+    <main className=" mt-32 mx-auto w-full max-w-2xl md:max-w-2xl lg:max-w-5xl  px-4 md:px-6 lg:px-8">
       <div className="flex flex-col md:flex-row">
         {/* Left column for information */}
         <div className="mt-8 md:mt-12 lg:mt-24 md:ml-12 h-auto lg:h-[500px] w-full md:w-[450px] lg:w-[600px]">
@@ -61,54 +61,91 @@ export default function MyPortfolio() {
           />
         </div>
       </div>
-      {/* Experience section */}
-      <section className=" h-screen content-center m-auto w-full px-4 md:px-6 lg:px-8">
-        <div className="flex items-center mb-8">
-          <hr className="border-t-1 border-black opacity-70 w-96 min-w-[150px] mr-4 md:mr-8 lg:mr-12 xl:mr-52 " />
-          <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 ml-4">
-            Experience
-          </h2>
-        </div>
-        <div className="space-y-8 max-w-sm justify-start lg:mr-80">
+
+      {/* Experience and Tools section */}
+      <section className="min-h-screen content-center mx-auto w-full  md:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+          {/* Experience Column */}
           <div>
-            <h3 className="text-sm md:text-lg lg:text-lg font-semibold opacity-80">
-              Software Engineer Intern at Matchmo
-            </h3>
-            <p className="text-xs md:text-sm lg:text-md opacity-70">
-              Jan 2024 - April 2024
-            </p>
-            <p className="text-xs lg:text-sm opacity-70 mt-2">
-              Assisted in designing Matchmo&apos;s mobile app with Figma,
-              enhanced their CRM using JavaScript, and ensured quality through
-              testing.
-            </p>
+            <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 mb-6 md:mb-8">
+              Experience
+            </h2>
+            <div className="space-y-6 md:space-y-8 pr-8 md:pr-16">
+              <div>
+                <h3 className="text-md md:text-lg lg:text-lg font-semibold opacity-80">
+                  Software Engineer Intern at Matchmo
+                </h3>
+                <p className="text-sm md:text-md lg:text-md opacity-70">
+                  Jan 2024 - April 2024
+                </p>
+                <p className="text-sm  opacity-70 mt-2">
+                  Assisted in designing Matchmo&apos;s mobile app with Figma,
+                  enhanced their CRM using JavaScript, and ensured quality
+                  through testing.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-md md:text-lg lg:text-lg font-semibold opacity-80">
+                  Web developer for Capstone Project
+                </h3>
+                <p className="text-sm md:text-md lg:text-md opacity-70">2023</p>
+                <p className="text-sm  opacity-70 mt-2">
+                  Developed an e-commerce web application for M.A.M. Bicycle
+                  Shop, leading the front-end development and implementing a
+                  bike customization feature. Utilized MS SQL for proper
+                  database storage.
+                </p>
+              </div>
+            </div>
           </div>
+
+          {/* Tools Column */}
           <div>
-            <h3 className="text-sm md:text-lg lg:text-lg font-semibold opacity-80">
-              Web developer for Capstone Project
-            </h3>
-            <p className="text-xs md:text-sm lg:text-md opacity-70">2023</p>
-            <p className="text-xs lg:text-sm opacity-70 mt-2">
-              Developed an e-commerce web application for M.A.M. Bicycle Shop,
-              leading the front-end development and implementing a bike
-              customization feature. Utilized MS SQL for proper database
-              storage.
-            </p>
+            <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 mb-6 md:mb-8">
+              Tools
+            </h2>
+            <div className="grid grid-cols-4 sm:grid-cols-4 gap-6 md:gap-8 max-w-xs sm:max-w-sm">
+              <div className="flex flex-col items-center">
+                <FaReact className="text-black hover:text-blue-500 text-4xl md:text-5xl lg:text-6xl transition-colors duration-300" />
+                <p className="mt-2 text-xs md:text-sm font-medium opacity-80">
+                  React
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiTailwindcss className="text-black hover:text-blue-400 text-4xl md:text-5xl lg:text-6xl transition-colors duration-300" />
+                <p className="mt-2 text-xs md:text-sm font-medium opacity-80">
+                  TailwindCSS
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaHtml5 className="text-black hover:text-orange-500 text-4xl md:text-5xl lg:text-6xl transition-colors duration-300" />
+                <p className="mt-2 text-xs md:text-sm font-medium opacity-80">
+                  HTML
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaJsSquare className="text-black hover:text-yellow-500 text-4xl md:text-5xl lg:text-6xl transition-colors duration-300" />
+                <p className="mt-2 text-xs md:text-sm font-medium opacity-80">
+                  JavaScript
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       {/* Projects section */}
-      <section className=" h-screen content-center  mx-auto w-full  px-4 md:px-6 lg:px-8">
+      <section className="h-screen content-center  mx-auto w-full  md:px-6 lg:px-8">
         <div className="flex items-center mb-8">
           <hr className="border-t-1 border-black opacity-70 w-96 min-w-[150px] mr-4 md:mr-8 lg:mr-24 xl:mr-52 " />
-          <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 ml-4">
+          <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 ml-auto">
             Projects
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-8 max-w-sm">
+        <div className="h-[720px] grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4x ">
           <a
             href="/projects/project1"
-            className="block p-6 bg-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            className="block  p-6 bg-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
           >
             <h3 className="text-lg lg:text-xl font-medium opacity-80">
               Project 1 Title
@@ -138,34 +175,6 @@ export default function MyPortfolio() {
               Project 4 Title
             </h3>
           </a>
-        </div>
-      </section>
-
-      {/* Tools section */}
-      <section className="h-screen content-center mx-auto w-full px-4 md:px-6 lg:px-8">
-        <div className="flex items-center mb-8">
-          <hr className="border-t-1 border-black opacity-70 w-96 min-w-[150px] mr-4 md:mr-8 lg:mr-12 xl:mr-52" />
-          <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 ml-4">
-            Tools
-          </h2>
-        </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 max-w-sm  gap-y-8 sm:gap-x-6 sm:gap-y-10 md:gap-x-8 md:gap-y-12 lg:gap-x-12 lg:gap-y-16">
-          <div className="flex flex-col items-center">
-            <FaReact className="text-black hover:text-blue-500 text-6xl transition-colors duration-300" />
-            <p className="mt-2 text-sm font-medium opacity-80">React</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <SiTailwindcss className="text-black hover:text-blue-400 text-6xl transition-colors duration-300" />
-            <p className="mt-2 text-sm font-medium opacity-80">TailwindCSS</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <FaHtml5 className="text-black hover:text-orange-500 text-6xl transition-colors duration-300" />
-            <p className="mt-2 text-sm font-medium opacity-80">HTML</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <FaJsSquare className="text-black hover:text-yellow-500 text-6xl transition-colors duration-300" />
-            <p className="mt-2 text-sm font-medium opacity-80">JavaScript</p>
-          </div>
         </div>
       </section>
     </main>
