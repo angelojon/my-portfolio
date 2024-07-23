@@ -26,20 +26,26 @@ export default function MyPortfolio() {
           </p>
           <div className="flex space-x-6 mt-4">
             <a
-              href="mailto:your-email@gmail.com"
+              href="mailto:macaldo.jonangelo@gmail.com"
               className="text-3xl text-gray-700 hover:text-gray-900"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaEnvelope />
             </a>
             <a
-              href="https://github.com/your-github"
+              href="https://github.com/angelojon"
               className="text-3xl text-gray-700 hover:text-gray-900"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaGithub />
             </a>
             <a
-              href="https://www.linkedin.com/in/your-linkedin"
+              href="https://www.linkedin.com/in/jon-angelo-macaldo-2aa87b276/"
               className="text-3xl text-gray-700 hover:text-gray-900"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedin />
             </a>
