@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3, FaJsSquare, FaFigma } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
 import { SiTailwindcss } from "react-icons/si";
 
 export default function MyPortfolio() {
@@ -118,6 +119,12 @@ export default function MyPortfolio() {
                 </p>
               </div>
               <div className="flex flex-col items-center">
+                <FaCss3 className="text-black hover:text-blue-700 text-4xl md:text-5xl lg:text-6xl transition-colors duration-300" />
+                <p className="mt-2 text-xs md:text-sm font-medium opacity-80">
+                  CSS
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
                 <FaHtml5 className="text-black hover:text-orange-500 text-4xl md:text-5xl lg:text-6xl transition-colors duration-300" />
                 <p className="mt-2 text-xs md:text-sm font-medium opacity-80">
                   HTML
@@ -127,6 +134,21 @@ export default function MyPortfolio() {
                 <FaJsSquare className="text-black hover:text-yellow-500 text-4xl md:text-5xl lg:text-6xl transition-colors duration-300" />
                 <p className="mt-2 text-xs md:text-sm font-medium opacity-80">
                   JavaScript
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <RiNextjsFill
+                  className="text-black hover:text-black text-4xl md:text-5xl
+                lg:text-6xl transition-colors duration-300"
+                />
+                <p className="mt-2 text-xs md:text-sm font-medium opacity-80">
+                  NextJS
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaFigma className="text-black hover:text-violet-600 text-4xl md:text-5xl lg:text-6xl transition-colors duration-300" />
+                <p className="mt-2 text-xs md:text-sm font-medium opacity-80">
+                  Figma
                 </p>
               </div>
             </div>
