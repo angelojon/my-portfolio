@@ -10,7 +10,7 @@ export default function MyPortfolio() {
         {/* Left column for information */}
         <div className="mt-8 md:mt-12 lg:mt-24 md:ml-12 h-auto lg:h-[500px] w-full md:w-[450px] lg:w-[600px]">
           <h1 className="text-5xl lg:text-6xl font-semibold opacity-90 mb-8">
-            Jon Angelo
+            JON ANGELO
           </h1>
           <div className="text-3xl lg:text-4xl opacity-80 mb-4">
             <h3>Front-end Developer</h3>
@@ -135,45 +135,76 @@ export default function MyPortfolio() {
       </section>
 
       {/* Projects section */}
-      <section className="h-screen content-center  mx-auto w-full  md:px-6 lg:px-8">
+      <section className="h-screen content-center mx-auto w-full md:px-6 lg:px-8">
         <div className="flex items-center mb-8">
-          <hr className="border-t-1 border-black opacity-70 w-96 min-w-[150px] mr-4 md:mr-8 lg:mr-24 xl:mr-52 " />
+          <hr className="border-t-1 border-black opacity-70 w-96 min-w-[150px] mr-4 md:mr-8 lg:mr-24 xl:mr-52" />
           <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 ml-auto">
             Projects
           </h2>
         </div>
-        <div className="h-[720px] grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4x ">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4x">
           <a
-            href="/projects/project1"
-            className="block  p-6 bg-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            href="https://drive.google.com/file/d/1tq-cxJmOb45UGIhQw8aaYjfzMNTM8S4I/view?usp=sharing"
+            className="relative block p-6 bg-gray-100 shadow-md rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <h3 className="text-lg lg:text-xl font-medium opacity-80">
-              Project 1 Title
+            <h3 className="text-sm lg:text-sm font-semibold opacity-80 mb-4 text-right">
+              M.A.M. Bicycle Shop
             </h3>
+            <img
+              src="/images/proj1.png"
+              alt="Project 1"
+              className="w-full object-cover rounded-lg"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              <p className="text-white text-center px-4">
+                Developed an e-commerce platform for M.A.M. Bicycle Shop with a
+                custom bike configuration feature for our Capstone Project.
+              </p>
+            </div>
           </a>
           <a
-            href="/projects/project2"
-            className="block p-6 bg-gray-200  rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            href="https://www.figma.com/design/2YLPsj1xAilFMb74gsRmbg/House-Loan%2FMortgage-App?node-id=0-1&t=ZvEZLlzGIrobJZiL-1"
+            className="relative block p-6 bg-gray-100 shadow-md rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <h3 className="text-lg lg:text-xl font-medium opacity-80">
-              Project 2 Title
+            <h3 className="text-sm lg:text-sm font-semibold opacity-80 mb-4 text-right">
+              Home Loan Mobile App
             </h3>
+            <img
+              src="/images/proj2.jpg"
+              alt="Project 2"
+              className="w-full object-cover rounded-lg"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              <p className="text-white text-center px-4">
+                During my internship, I designed a user-friendly mobile app for
+                processing and tracking home loans.
+              </p>
+            </div>
           </a>
           <a
-            href="/projects/project3"
-            className="block p-6 bg-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            href="https://my-portfolio-angelo.vercel.app/"
+            className="relative block p-6 bg-gray-100 shadow-md rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <h3 className="text-lg lg:text-xl font-medium opacity-80">
-              Project 3 Title
+            <h3 className="text-sm lg:text-sm font-semibold opacity-80 mb-4 text-right">
+              My Website
             </h3>
-          </a>
-          <a
-            href="/projects/project4"
-            className="block p-6 bg-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-          >
-            <h3 className="text-lg lg:text-xl font-medium opacity-80">
-              Project 4 Title
-            </h3>
+            <img
+              src="/images/proj3.png"
+              alt="Project 3"
+              className="w-full object-cover rounded-lg"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              <p className="text-white text-center px-4">
+                A minimalistic showcase of my skills in developing responsive
+                and user-friendly designs.
+              </p>
+            </div>
           </a>
         </div>
       </section>
