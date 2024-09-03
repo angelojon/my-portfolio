@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { FaReact, FaHtml5, FaCss3, FaJsSquare, FaFigma } from "react-icons/fa";
@@ -6,24 +8,23 @@ import { SiTailwindcss } from "react-icons/si";
 
 export default function MyPortfolio() {
   return (
-    <main className=" mt-32 mx-auto w-full max-w-2xl md:max-w-2xl lg:max-w-5xl  px-4 md:px-6 lg:px-8">
-      <div className="flex flex-col md:flex-row">
+    <main className="mx-auto w-full max-w-2xl md:max-w-2xl lg:max-w-5xl  px-4 md:px-6 lg:px-8">
+      <div className=" my-24 sm:mb-24 flex flex-col md:flex-row">
         {/* Left column for information */}
-        <div className="mt-8 md:mt-12 lg:mt-24 md:ml-12 h-auto lg:h-[500px] w-full md:w-[450px] lg:w-[600px]">
-          <h1 className="text-5xl lg:text-6xl font-semibold opacity-90 mb-8">
+        <div className=" mt-8 md:mt-12 lg:mt-24 md:ml-12 h-auto lg:h-[500px] w-full md:w-[450px] lg:w-[600px]">
+          <h1 className="text-5xl lg:text-6xl font-bold opacity-90 mb-8">
             JON ANGELO
           </h1>
-          <div className="text-3xl lg:text-4xl opacity-80 mb-4">
+          <div className="text-3xl lg:text-4xl font-semibold opacity-80 mb-4">
             <h3>Front-end Developer</h3>
             <h3>UI/UX Designer</h3>
           </div>
           <p className="text-lg lg:text-xl opacity-70 mb-8">
-            An Information Technology graduate passionate about designing
-            high-quality, responsive user interfaces that deliver exceptional
-            user experiences.
+            Passionate in designing high-quality, responsive user interfaces
+            that deliver exceptional user experiences.
           </p>
-          <p className="text-xl lg:text-2xl font-medium opacity-70 mb-8">
-            Bringing visions to the web.
+          <p className="text-xl lg:text-2xl font-semibold opacity-70 mb-8">
+            BRINGING VISIONS TO THE WEB.
           </p>
           <div className="flex space-x-6 mt-4">
             <a
@@ -64,7 +65,7 @@ export default function MyPortfolio() {
       </div>
 
       {/* Experience and Tools section */}
-      <section className="min-h-screen content-center mx-auto w-full  md:px-6 lg:px-8">
+      <section className="min-h-screen content-center mx-auto mb-24 sm:mb-24 w-full  md:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
           {/* Experience Column */}
           <div>
@@ -164,7 +165,7 @@ export default function MyPortfolio() {
             Projects
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4x">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4x mb-40 sm:mb-24">
           <a
             href="https://drive.google.com/file/d/1tq-cxJmOb45UGIhQw8aaYjfzMNTM8S4I/view?usp=sharing"
             className="relative block p-6 bg-gray-100 shadow-md rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300"
@@ -208,13 +209,13 @@ export default function MyPortfolio() {
             </div>
           </a>
           <a
-            href="https://my-portfolio-angelo.vercel.app/"
-            className="relative block p-6 bg-gray-100 shadow-md rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            href="https://www.amv-events.com/"
+            className=" relative block p-6 bg-gray-100 shadow-md rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
             <h3 className="text-sm lg:text-sm font-semibold opacity-80 mb-4 text-right">
-              My Website
+              AMV Events Management
             </h3>
             <img
               src="/images/proj3.png"
@@ -223,13 +224,46 @@ export default function MyPortfolio() {
             />
             <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg">
               <p className="text-white text-center px-4">
-                A minimalistic showcase of my skills in developing responsive
-                and user-friendly designs.
+                Developed a single-page website for an event management business
+                as a freelance work. It showcases responsiveness and bits of
+                animations.
               </p>
             </div>
           </a>
         </div>
       </section>
+      {/* Footer section */}
+      <footer className="py-6 text-black">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-sm">© 2024 Jon Angelo. All rights reserved.</p>
+          <div className="flex space-x-4 mt-4 md:mt-0">
+            <a
+              href="mailto:macaldo.jonangelo@gmail.com"
+              className="text-xl hover:text-gray-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaEnvelope />
+            </a>
+            <a
+              href="https://github.com/angelojon"
+              className="text-xl hover:text-gray-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jon-angelo-macaldo-2aa87b276/"
+              className="text-xl hover:text-gray-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
