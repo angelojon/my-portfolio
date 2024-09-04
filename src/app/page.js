@@ -75,10 +75,23 @@ export default function MyPortfolio() {
             <div className="space-y-6 md:space-y-8 pr-8 md:pr-16">
               <div>
                 <h3 className="text-md md:text-lg lg:text-lg font-semibold opacity-80">
+                  Freelance Web Developer
+                </h3>
+                <p className="text-sm md:text-md lg:text-md opacity-70">
+                  May - August 2024
+                </p>
+                <p className="text-sm  opacity-70 mt-2">
+                  Designed and developed an event management website that
+                  followed a structured process including wireframing,
+                  prototyping, and development.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-md md:text-lg lg:text-lg font-semibold opacity-80">
                   Software Engineer Intern at Matchmo
                 </h3>
                 <p className="text-sm md:text-md lg:text-md opacity-70">
-                  Jan 2024 - April 2024
+                  Jan - April 2024
                 </p>
                 <p className="text-sm  opacity-70 mt-2">
                   Assisted in designing Matchmo&apos;s mobile app with Figma,
@@ -88,9 +101,11 @@ export default function MyPortfolio() {
               </div>
               <div>
                 <h3 className="text-md md:text-lg lg:text-lg font-semibold opacity-80">
-                  Web developer for Capstone Project
+                  Capstone Project Web Developer
                 </h3>
-                <p className="text-sm md:text-md lg:text-md opacity-70">2023</p>
+                <p className="text-sm md:text-md lg:text-md opacity-70">
+                  Feb - Nov 2023
+                </p>
                 <p className="text-sm  opacity-70 mt-2">
                   Developed an e-commerce web application for M.A.M. Bicycle
                   Shop, leading the front-end development and implementing a
