@@ -71,11 +71,22 @@ export default function MyPortfolio() {
           <div>
             <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 mb-6 md:mb-8">
               Experience
-            </h2>
+            </h2>            
             <div className="space-y-6 md:space-y-8 pr-8 md:pr-16">
               <div>
                 <h3 className="text-md md:text-lg lg:text-lg font-semibold opacity-80">
-                  Freelance Web Developer
+                  Software and Support Officer at Kynection
+                </h3>
+                <p className="text-sm md:text-md lg:text-md opacity-70">
+                  September 2024 - Present
+                </p>
+                <p className="text-sm  opacity-70 mt-2">
+                  Provide technical support and ensure smooth system operations through application deployment, troubleshooting, and issue resolution. Contribute to testing, QA, and GitHub workflows while maintaining technical documentation and training materials. Collaborate with developers to improve system functionality and user experience using the Upvise framework, web technologies (HTML, CSS, JavaScript), and support tools such as Zendesk.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-md md:text-lg lg:text-lg font-semibold opacity-80">
+                  Freelance Web Developer for AMV Events & Management
                 </h3>
                 <p className="text-sm md:text-md lg:text-md opacity-70">
                   May - August 2024
