@@ -66,7 +66,7 @@ export default function MyPortfolio() {
 
       {/* Experience and Tools section */}
       <section className="min-h-screen content-center mx-auto mb-24 sm:mb-24 w-full  md:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+        <div> 
           {/* Experience Column */}
           <div>
             <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 mb-6 md:mb-8">
