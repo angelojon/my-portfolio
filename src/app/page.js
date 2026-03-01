@@ -8,7 +8,7 @@ import { SiTailwindcss } from "react-icons/si";
 
 export default function MyPortfolio() {
   return (
-    <main className="mx-auto w-full max-w-2xl md:max-w-2xl lg:max-w-5xl  px-4 md:px-6 lg:px-8">
+    <main className="min-h-screen flex flex-col mx-auto w-full max-w-2xl md:max-w-2xl lg:max-w-5xl px-4 md:px-6 lg:px-8">
       <div className=" my-24 sm:mb-24 flex flex-col md:flex-row">
         {/* Left column for information */}
         <div className=" mt-8 md:mt-12 lg:mt-24 md:ml-12 h-auto lg:h-[500px] w-full md:w-[450px] lg:w-[600px]">
