@@ -185,7 +185,9 @@ export default function MyPortfolio() {
                 </p>
               </div>
             </div>
-
+            <div>
+              
+            </div>
              <div className="flex items-center mb-8">
           <hr className="border-t-1 border-black opacity-70 w-96 min-w-[150px] mr-4 md:mr-8 lg:mr-24 xl:mr-52" />
           <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 ml-auto">
