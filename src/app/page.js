@@ -8,7 +8,7 @@ import { SiTailwindcss } from "react-icons/si";
 
 export default function MyPortfolio() {
   return (
-    <main className="min-h-screen flex flex-col mx-auto w-full max-w-2xl md:max-w-2xl lg:max-w-5xl px-4 md:px-6 lg:px-8">
+    <main className="mx-auto w-full max-w-2xl md:max-w-2xl lg:max-w-5xl  px-4 md:px-6 lg:px-8">
       <div className=" my-24 sm:mb-24 flex flex-col md:flex-row">
         {/* Left column for information */}
         <div className=" mt-8 md:mt-12 lg:mt-24 md:ml-12 h-auto lg:h-[500px] w-full md:w-[450px] lg:w-[600px]">
@@ -64,7 +64,7 @@ export default function MyPortfolio() {
         </div>
       </div>
 
-      {/* Experience and Tools section */}
+      {/* Experience section */}
       <section className="min-h-screen content-center mx-auto mb-24 sm:mb-24 w-full  md:px-6 lg:px-8">
         <div> 
           {/* Experience Column */}
@@ -131,7 +131,7 @@ export default function MyPortfolio() {
 
 
       {/* New Tools Section */}
-      <section className="h-screen content-center mx-auto w-full md:px-6 lg:px-8">
+      <section className="min-h-screen mx-auto w-full md:px-6 lg:px-8 py-20">
         <div className="flex items-center mb-8">
           <hr className="border-t-1 border-black opacity-70 w-96 min-w-[150px] mr-4 md:mr-8 lg:mr-24 xl:mr-52" />
           <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold opacity-90 ml-auto">
@@ -261,42 +261,39 @@ export default function MyPortfolio() {
           </a>
         </div>
       </section>
-
+      
       {/* Footer section */}
-<footer className="w-full mt-auto py-6 text-black border-t">
-  <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-    <p className="text-sm text-center md:text-left">
-      © 2024 Jon Angelo Macaldo. All rights reserved.
-    </p>
-
-    <div className="flex space-x-4 mt-4 md:mt-0">
-      <a
-        href="mailto:macaldo.jonangelo@gmail.com"
-        className="text-xl hover:text-gray-400"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaEnvelope />
-      </a>
-      <a
-        href="https://github.com/angelojon"
-        className="text-xl hover:text-gray-400"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaGithub />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/jon-angelo-macaldo-2aa87b276/"
-        className="text-xl hover:text-gray-400"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaLinkedin />
-      </a>
-    </div>
-  </div>
-</footer>
+      <footer className="py-6 text-black">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-sm">© 2024 Jon Angelo. All rights reserved.</p>
+          <div className="flex space-x-4 mt-4 md:mt-0">
+            <a
+              href="mailto:macaldo.jonangelo@gmail.com"
+              className="text-xl hover:text-gray-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaEnvelope />
+            </a>
+            <a
+              href="https://github.com/angelojon"
+              className="text-xl hover:text-gray-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jon-angelo-macaldo-2aa87b276/"
+              className="text-xl hover:text-gray-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
