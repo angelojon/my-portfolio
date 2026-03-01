@@ -75,7 +75,7 @@ export default function MyPortfolio() {
             <div className="space-y-6 md:space-y-8 pr-8 md:pr-16">
               <div>
                 <h3 className="text-md md:text-lg lg:text-lg font-semibold opacity-80">
-                  Software and Support Officer at Kynection
+                  Software and Support Developer at Kynection
                 </h3>
                 <p className="text-sm md:text-md lg:text-md opacity-70">
                   September 2024 - Present
