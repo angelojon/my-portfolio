@@ -266,7 +266,7 @@ export default function MyPortfolio() {
 <footer className="w-full mt-auto py-6 text-black border-t">
   <div className="max-w-5xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
     <p className="text-sm text-center md:text-left">
-      © 2024 Jon Angelo. All rights reserved.
+      © 2024 Jon Angelo Macaldo. All rights reserved.
     </p>
 
     <div className="flex space-x-4 mt-4 md:mt-0">
