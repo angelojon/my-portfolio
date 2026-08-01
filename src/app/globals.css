@@ -32,6 +32,22 @@ body {
     outline: 2px solid theme("colors.brass");
     outline-offset: 2px;
   }
+
+  /*
+    In-page nav jumps ease rather than teleport. The reduced-motion block below
+    forces this back to `auto`, so it costs nothing for users who opt out.
+  */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /*
+    Anchor targets stop clear of the sticky nav instead of landing underneath
+    it. Roughly nav height plus breathing room.
+  */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
 }
 
 @layer components {

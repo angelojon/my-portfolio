@@ -128,11 +128,9 @@ border in `sage` at low opacity. Collapses to a simple menu on mobile.
 vertical space around it. Keep the measure to roughly 60 characters even though
 it's centred, so lines don't run long.
 
-**Featured work** — the heading stays fixed while project cards scroll past it.
-Implement with `position: sticky` on the heading, not scroll-speed parallax.
-Keep the sticky heading vertically compact so iOS Safari's collapsing toolbar
-doesn't make it feel jumpy. Project *content* is out of scope — layout and
-styling only.
+**Featured work** — the heading is a plain section label, same treatment as
+About. No sticky, no parallax: it scrolls away with its cards. Project
+*content* is out of scope — layout and styling only.
 
 **Contact** — inverted palette. `bottle` background, `linen` text. This is the
 only section where green is the ground, and that inversion is deliberate: it

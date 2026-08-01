@@ -1,8 +1,7 @@
 /**
- * Featured work — the heading sticks while the cards scroll past it.
+ * Featured work — plain section label, same treatment as About.
  *
- * The sticky shape is set up here because it's structural, but the heading
- * offset and card styling belong to the design pass.
+ * Card styling belongs to the design pass.
  *
  * Project content below is moved verbatim from the old src/app/page.js. New
  * projects are in production — do not rewrite the copy or swap the links.
@@ -14,11 +13,9 @@ export default function FeaturedWork() {
       aria-labelledby="featured-work-heading"
       className="mx-auto w-full max-w-5xl border border-dashed border-sage/40 px-4 py-24 md:px-6 lg:px-8"
     >
-      <div className="sticky top-16 z-10 bg-linen py-2">
-        <h2 id="featured-work-heading" className="font-serif text-display-md">
-          Featured work
-        </h2>
-      </div>
+      <h2 id="featured-work-heading" className="font-serif text-display-md">
+        Featured work
+      </h2>
 
       <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
         <a
