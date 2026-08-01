@@ -58,6 +58,9 @@ The current copy is generic and I want it gone. Specifically:
 - Active voice. A button says what happens when you press it.
 - Short sentences. If a sentence could be cut without losing information, cut it.
 
+All final site copy lives in `copy.md` in the project root. Use it verbatim
+when building sections. Don't write new copy without asking me first.
+
 ## Quality floor — non-negotiable, don't announce it, just do it
 
 - Responsive down to 375px width. Check mobile at every step.
@@ -169,3 +172,6 @@ another element starts competing with it, cut the other element.
 - Repo "About" links to the wrong Vercel URL.
 - No resume download anywhere on the site.
 - No nav — it's a long scroll with no way to jump to sections.
+- Experience section still says "currently" at Kynection. I've left that role —
+  needs an end date.
+- "Open to work" status should appear high on the page, not only in contact.
