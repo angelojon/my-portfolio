@@ -26,8 +26,50 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer base {
+  /* Keyboard focus is visible everywhere by default, in brass. */
+  :focus-visible {
+    outline: 2px solid theme("colors.brass");
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Micro-label / eyebrow: Inter, uppercase, wide tracking, sage. */
+  .eyebrow {
+    @apply font-sans text-eyebrow uppercase text-sage;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/*
+  Reduced-motion floor. This is the layer that cannot be forgotten: it applies
+  whether or not a component remembered to use <MotionSafe>.
+
+  The [data-motion="safe"] rule matters for the first frame after hydration.
+  useReducedMotion() can only read matchMedia after mount, so for one frame a
+  motion element could sit at opacity 0. This forces the final state instead, so
+  reduced-motion users never see content flash in.
+*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-motion="safe"] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    clip-path: none !important;
   }
 }
